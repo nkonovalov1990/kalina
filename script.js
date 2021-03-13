@@ -2,10 +2,13 @@ $(document).ready(function(){
     var $draggables = $(".draggable").draggabilly({
     });
     $("#map1").click(function(){
-        $(".draggable").css("background-image", "2020-05-12_10-12-37-min.png)");
+        $(".draggable").css("background-image", "kalina-1-min.jpg");
     });
     $("#map2").click(function(){
-        $(".draggable").css("background-image", "2020-05-12_10-13-00-min.png)");
+        $(".draggable").css("background-image", "kalina-2-min.jpg");
+    });
+    $("#map3").click(function(){
+        $(".draggable").css("background-image", "kalina-3-min.jpg");
     });
     $("#zoomIn").click(function(){
         var scale = $(".draggable").css("background-size");

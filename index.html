@@ -10,7 +10,8 @@
 <body>
 	<div class="mapsToggle">
 		<button onclick="SwitchToMap1()" class="map1 butttonMapSelect">Исходный проект</button>
-		<button onclick="SwitchToMap2()" class="map2 ">Улучшенный проект</button>
+		<button onclick="SwitchToMap2()" class="map2">Улучшенный май 2020</button>
+		<button onclick="SwitchToMap3()" class="map3">Улучшенный март 2021</button>
 	</div>
 	<div class="zoom">
 		<button onclick="zoomIn()" class="plus">&#43;</button>
@@ -26,12 +27,20 @@
 	function SwitchToMap1() {
 		$(".draggable").css("background-image", "url(kalina-1-min.jpg)");
 		$(".map2").removeClass("butttonMapSelect");
+		$(".map3").removeClass("butttonMapSelect");
 		$(".map1").addClass( "butttonMapSelect" );
 	}
 	function SwitchToMap2() {
 		$(".draggable").css("background-image", "url(kalina-2-min.jpg)");
 		$(".map1").removeClass("butttonMapSelect");
+		$(".map3").removeClass("butttonMapSelect");
 		$(".map2").addClass( "butttonMapSelect" );
+	}
+	function SwitchToMap3() {
+		$(".draggable").css("background-image", "url(kalina-3-min.jpg)");
+		$(".map1").removeClass("butttonMapSelect");
+		$(".map2").removeClass("butttonMapSelect");
+		$(".map3").addClass( "butttonMapSelect" );
 	}
 	function zoomIn() {
 		var scale = $(".draggable").css("background-size");
